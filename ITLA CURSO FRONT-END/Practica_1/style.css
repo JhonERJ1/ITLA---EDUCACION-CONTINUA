@@ -1,0 +1,133 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.enlaces, .footer{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.enlaces__element-style, .footer__p{
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: white;
+  padding: 0.5em 3em;
+  color: black;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.main-style{
+  margin-top: 5px;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.linea{
+  margin-left: 10px;
+  height: 90%;
+  width: 2px;
+  background-color: white;
+}
+
+.contactos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactos__soc-link{
+  display: flex;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  text-decoration: none;
+}
+
+.contactos__soc-style{
+  position: relative;
+}
+
+
+.icon{
+  display: flex;
+  position: absolute;
+  right: 7px;
+}
+
+.icon-style{
+  color: transparent;
+}
+
+.icon-style:hover{
+  color: white;
+}
+
+.footer{
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 1rem 3em;
+  text-align: center;
+}
+
+.footer__p{
+  padding: 0.5em 2em;
+}
+
+.span{
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+}
+
+@media (max-width: 570px){
+  .navbar{
+    padding: 1rem;
+  }
+
+  .enlaces__element{
+    border-radius: 4px;
+    background-color: white;
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .enlaces, .footer{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer{
+    grid-template-rows: auto 1fr;
+  }
+}
